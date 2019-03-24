@@ -51,7 +51,7 @@ python -m venv .venv
 ```
 
 ### For VS Code please create .env file
-`echo PYTHONPATH=codeFolder >> .env`
+`echo PYTHONPATH=server >> .env`
 
 ## Deployment 🐳
 
