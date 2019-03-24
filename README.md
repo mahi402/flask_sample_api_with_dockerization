@@ -35,4 +35,22 @@
 ### Start server
 `python server/server.py`
 
+---
+
+## Development
+
+### You may need to create virtual python env like this
+```bash
+# macOS/Linux
+# You may need to run sudo apt-get install python3-venv first
+python3 -m venv .venv
+
+# Windows
+# You can also use py -3 -m venv .venv
+python -m venv .venv
+```
+
+### For VS Code please create .env file
+`echo PYTHONPATH=codeFolder >> .env`
+
 ⚠ This project use _python 3.7.0 32-bit_ to run server
