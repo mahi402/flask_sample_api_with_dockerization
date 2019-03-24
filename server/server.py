@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Documentation
 
@@ -9,7 +10,6 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 from logzero import logger
 from num2words import num2words
-
 
 def create_app(config=None):
     app = Flask(__name__)
