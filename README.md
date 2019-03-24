@@ -1,6 +1,6 @@
-# flask_sample_api_with_dockerization
+# Flask sample api with dockerization
 
-## features
+## Features ✨
 
 ### Hello world
   * Endpoint `/`
@@ -15,7 +15,7 @@
         { "echo": "somedata" }
         ```
 
-### convert number to human readable word
+### Convert number to human readable word
   * Endpoint `/numtoword/[number]`
     * request : **Any integer**
     * response: **application/json**
@@ -27,7 +27,7 @@
         ```
 ---
 
-## Run server
+## Run server 🏃‍
 
 ### Install dependencies
 `pip install -r requirements.txt`
@@ -37,7 +37,7 @@
 
 ---
 
-## Development
+## Development 👨‍💻
 
 ### You may need to create virtual python env like this
 ```bash
@@ -53,4 +53,12 @@ python -m venv .venv
 ### For VS Code please create .env file
 `echo PYTHONPATH=codeFolder >> .env`
 
-⚠ This project use _python 3.7.0 32-bit_ to run server
+## Deployment 🐳
+
+### Build your image
+`docker build -t flask-sample:[tag-name] .`
+
+### Quickly Run your image as container
+`docker run -d -p XXXX:8080 flask-sample:[tag-name]`
+
+⚠ This project use _python 3.7.X 32-bit_ to run server

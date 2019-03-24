@@ -46,6 +46,7 @@ def create_app(config=None):
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
+    port = int(os.environ.get("FLASK_PORT", default=8000))
+    host = str(os.environ.get("FLASK_HOST", default="localhost"))
     app = create_app()
-    app.run(host="localhost", port=port)
+    app.run(host=host, port=port)
