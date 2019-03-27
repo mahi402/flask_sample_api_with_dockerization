@@ -57,6 +57,8 @@ python -m venv .venv
 
 ### Build your image
 `docker build -t flask-sample:[tag-name] .`
+#### If behind proxy
+`docker build --build-arg http_proxy=http://host:port --build-arg https_proxy=http://host:port -t flask-sample:[tag-name] .`
 
 ### Quickly Run your image as container
 `docker run -d -p XXXX:8080 flask-sample:[tag-name]`
