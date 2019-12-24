@@ -16,7 +16,7 @@
         ```
 
 ### Convert number to human readable word
-  * Endpoint `/numtoword/[number]`
+  * Endpoint `/api/numtoword/[number]`
     * request : **Any integer**
     * response: **application/json**
         ```json
@@ -57,7 +57,7 @@ python -m venv .venv
 
 ### Build your image
 ```bash
-docker build -t flask-sample:[tag-name] .
+docker build -t flask-sample:[tag-name] -f DockerFile .
 ```
 #### If behind proxy
 ```bash
