@@ -57,7 +57,7 @@ python -m venv .venv
 
 ### Build your image
 ```bash
-docker build -t flask-sample:[tag-name] -f DockerFile .
+docker build -t flask-sample:[tag-name] -f Dockerfile .
 ```
 #### If behind proxy
 ```bash
